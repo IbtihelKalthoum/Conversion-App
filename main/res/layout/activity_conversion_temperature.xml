@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/temperature"
+        android:layout_width="227dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+
+
+    <TextView
+        android:text="Conversion de temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/titre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintVertical_bias="0.022"/>
+    <Button
+        android:text="Convertir ..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/convertir"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.412"
+        app:layout_constraintHorizontal_bias="0.444"
+        android:onClick="convertir"/>
+    <TextView
+        android:text="Résultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/resultat"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <RadioGroup
+        android:layout_width="240dp"
+        android:layout_height="122dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.497" app:layout_constraintVertical_bias="0.218">
+        <RadioButton
+            android:text="Celcius --> Farenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/conv1"
+            />
+        <RadioButton
+            android:text="Farenheit --> Celcius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/conv2"
+            />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="257dp"
+        android:layout_height="139dp"
+        android:src="@drawable/cf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
